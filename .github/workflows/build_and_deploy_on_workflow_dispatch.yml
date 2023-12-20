@@ -21,6 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
+
       - name: Map options
         uses: kanga333/variable-mapper@master
         id: mapper
@@ -36,8 +40,10 @@ jobs:
               }
             }
           export_to: env
+
       - name: build
         run: ./gradlew assemble${{env.build_type}}
+        
       - name: deploy
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
