@@ -49,10 +49,18 @@ jobs:
       - name: build
         run: ./gradlew assemble${{env.build_type}}
 
-      - name: deploy
+      - name: deploy free app
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
           serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
           groups: testers
-          file: app/build/outputs/apk/${{inputs.variants}}/app-${{inputs.variants}}.apk
+          file: app/build/outputs/apk/free/${{inputs.variants}}/app-free-${{inputs.variants}}.apk
+
+      - name: deploy premium app
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{secrets.FIREBASE_APP_ID}}
+          serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
+          groups: testers
+          file: app/build/outputs/apk/premium/${{inputs.variants}}/app-premium-${{inputs.variants}}.apk
