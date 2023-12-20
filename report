@@ -1,0 +1,66 @@
+:app:loadKtlintReporters
+:app:runKtlintCheckOverAndroidTestDebugSourceSet NO-SOURCE
+:app:ktlintAndroidTestDebugSourceSetCheck SKIPPED
+:app:runKtlintCheckOverAndroidTestReleaseSourceSet NO-SOURCE
+:app:ktlintAndroidTestReleaseSourceSetCheck SKIPPED
+:app:runKtlintCheckOverAndroidTestSourceSet
+:app:runKtlintCheckOverDebugSourceSet NO-SOURCE
+:app:ktlintDebugSourceSetCheck SKIPPED
+:app:runKtlintCheckOverKotlinScripts
+:app:runKtlintCheckOverMainSourceSet
+:app:runKtlintCheckOverReleaseSourceSet NO-SOURCE
+:app:ktlintReleaseSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestDebugSourceSet NO-SOURCE
+:app:ktlintTestDebugSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestFixturesDebugSourceSet NO-SOURCE
+:app:ktlintTestFixturesDebugSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestFixturesReleaseSourceSet NO-SOURCE
+:app:ktlintTestFixturesReleaseSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestFixturesSourceSet NO-SOURCE
+:app:ktlintTestFixturesSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestReleaseSourceSet NO-SOURCE
+:app:ktlintTestReleaseSourceSetCheck SKIPPED
+:app:runKtlintCheckOverTestSourceSet
+:app:ktlintAndroidTestSourceSetCheck FAILED
+C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\src\androidTest\java\com\example\zquran\ExampleInstrumentedTest.kt:1:1 File must end with a newline (\n)
+C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\src\androidTest\java\com\example\zquran\ExampleInstrumentedTest.kt:3:1 Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
+C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\src\androidTest\java\com\example\zquran\ExampleInstrumentedTest.kt:9:1 Wildcard import (cannot be auto-corrected)
+:app:ktlintKotlinScriptCheck FAILED
+C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build.gradle.kts:1:1 File must end with a newline (\n)
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:ktlintAndroidTestSourceSetCheck'.
+> A failure occurred while executing org.jlleitschuh.gradle.ktlint.worker.ConsoleReportWorkAction
+   > KtLint found code style violations. Please see the following reports:
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintAndroidTestSourceSetCheck\ktlintAndroidTestSourceSetCheck.txt
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintAndroidTestSourceSetCheck\ktlintAndroidTestSourceSetCheck.xml
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintAndroidTestSourceSetCheck\ktlintAndroidTestSourceSetCheck.sarif
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:ktlintKotlinScriptCheck'.
+> A failure occurred while executing org.jlleitschuh.gradle.ktlint.worker.ConsoleReportWorkAction
+   > KtLint found code style violations. Please see the following reports:
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintKotlinScriptCheck\ktlintKotlinScriptCheck.txt
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintKotlinScriptCheck\ktlintKotlinScriptCheck.xml
+     - C:\Data\Zachrie\Pemrograman\Synrgy Academy\Android (Kotlin)\Challenge\ch7\app\build\reports\ktlint\ktlintKotlinScriptCheck\ktlintKotlinScriptCheck.sarif
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+==============================================================================
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 15s
+7 actionable tasks: 7 executed
