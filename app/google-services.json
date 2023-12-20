@@ -26,9 +26,47 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:204326423512:android:0fbd9dc7c25c148571c0ad",
+        "android_client_info": {
+          "package_name": "com.zachriek.zquran.free.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjHDjx2g3S3KSgt8zSQp_qOfDy_BXlPUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:204326423512:android:f8cdc40e853ed6fc71c0ad",
         "android_client_info": {
           "package_name": "com.zachriek.zquran.premium"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjHDjx2g3S3KSgt8zSQp_qOfDy_BXlPUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204326423512:android:a6645b458b71418d71c0ad",
+        "android_client_info": {
+          "package_name": "com.zachriek.zquran.premium.debug"
         }
       },
       "oauth_client": [],
