@@ -1,8 +1,6 @@
 name: Check Lint, Build and Test
 
 on:
-  commit:
-    branches: [ "master" ]
   push:
     branches: [ "master" ]
   pull_request:
